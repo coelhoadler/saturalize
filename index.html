@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saturalize function test</title>
+    <link rel="stylesheet" href="style.css">
     <script async src="./index.js"></script>
+    <script async src="./modules/saturalize.js"></script>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <p>Hexadecimal color: </p>
+        <input type="text" id="hexColor" placeholder="#b53f3f" value="#b53f3f">
+        <div class="wrapper_preview">
+            <div class="wrapper_preview--original square" id="originalColor">Original color</div>
+            <div class="wrapper_preview--edited square" id="editedColor">Edited Color</div>
+        </div>
+        <div class="wrapper_controls">
+            <p>Saturalize: </p>
+            <input type="range" id="saturalizeRange" min="-1" value="0" max="1" step=".001">
+        </div>
+    </div>
 </body>
 </html>
